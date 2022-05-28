@@ -20,7 +20,7 @@ const Home: NextPage = () => {
   }
 
   console.log(session)
-  
+
   return (
     <div className="">
       <Head>
