@@ -20,7 +20,7 @@ const Dashboard = () => {
     <main className="flex min-h-screen bg-black min-w-max lg:pb-24">
       <Sidebar />
       <Body spotifyApi={spotifyApi} chooseTrack={chooseTrack} />
-      <Right />
+      <Right chooseTrack={chooseTrack} spotifyApi={spotifyApi} />
     </main>
   )
 }

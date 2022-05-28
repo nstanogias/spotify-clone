@@ -13,7 +13,7 @@ const Track = ({ track, chooseTrack }) => {
   const handlePlay = () => {
     chooseTrack(track)
 
-    if (track.uri === playingTrack.uri) {
+    if (track.uri === playingTrack?.uri) {
       setPlay(!play)
     }
   }
@@ -48,7 +48,7 @@ const Track = ({ track, chooseTrack }) => {
             }`}
             onClick={() => setHasLiked(!hasLiked)}
           />
-          {track.uri === playingTrack.uri && play ? (
+          {track.uri === playingTrack?.uri && play ? (
             <>
               <div
                 className="icon absolute -right-0.5 flex h-10 w-10 items-center justify-center rounded-full border border-[#15883e] bg-[#15883e] hover:scale-110"

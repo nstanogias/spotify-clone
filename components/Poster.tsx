@@ -9,7 +9,7 @@ function Poster({ track, chooseTrack }) {
   const handlePlay = () => {
     chooseTrack(track)
 
-    if (track.uri === playingTrack.uri) {
+    if (track.uri === playingTrack?.uri) {
       setPlay(!play)
     }
   }
@@ -27,7 +27,7 @@ function Poster({ track, chooseTrack }) {
 
       <div className="absolute inset-x-0 bottom-10 ml-4 flex items-center space-x-3.5">
         <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#15883e] group-hover:bg-[#1db954]">
-          {track.uri === playingTrack.uri && play ? (
+          {track.uri === playingTrack?.uri && play ? (
             <BsFillPauseFill className="text-xl text-white" />
           ) : (
             <BsFillPlayFill className="ml-[1px] text-xl text-white" />
